@@ -1,0 +1,18 @@
+/*
+Theme Name: Saasup Template
+Theme URI: https://coderitsolution.com
+Author: Akash
+Author URI: https://akash.me
+Version: 1.0.0
+Description: This is a Coder It Solution Saasup Theme.
+Tags: coder it solution, Saasup theme
+Text Domain: saasup
+
+*/
+.blog_boxs .blog_text h2 a {
+    margin-bottom: 5px;
+    display: inline-block;
+    color: var(--primaryColor1);
+    text-decoration: none;
+    color: #000;
+  }

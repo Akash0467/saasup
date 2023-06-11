@@ -26,10 +26,7 @@
 
   <?php wp_head() ?>
 </head>
-
-<body>
-   <!-- strat header_area  -->
-   <header class="About_header ">
+<header class="header_area section_padding">
     <div class="container">
        <div class="row align-items-center">
           <div class="col-md-12 col-lg-3 ">
@@ -39,41 +36,43 @@
               </a>
               <div class="menu-icon">
                 <a href="#" class="btn-2">Sing In</a>
-                <a href="#" class="menu-icon1"><i class="fa-solid fa-bars-staggered"></i></a>
+                <a href="#" class="menu-icon1"><i class="fa-solid fa-bars-staggered"></i></a>               
               </div>
             </div>
           </div>
           <div class="col-md-12 col-lg-9">
             <div class="menus d-flex justify-content-end align-items-center">
               <nav class="menu">
-                <ul class="d-flex ">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="#"  data-bs-toggle="dropdown" class="dropdown-toggle"  >Features</a>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown-item"><a href="features.html">Features</a></li>
-                      <li class="dropdown-item"><a href="developer.html">Developer</a></li>
-                      <li class="dropdown-item"><a href="Articles.html">Article</Article></a></li>
-                      <li class="dropdown-item"><a href="facebook.html">Facebook</a></li> 
-                    </ul>
-                  </li>
-                  <li><a href="#"  data-bs-toggle="dropdown"  class="dropdown-toggle" >Pages</a>
-                    
-                    <ul class="dropdown-menu">
-                      <li class="dropdown-item"><a href="careers.html">Careers</a></li>
-                      <li class="dropdown-item"><a href="changelog.html">Changelog</a></li>
-                      <li class="dropdown-item"><a href="Integrations.html">Integrations</a></li>
-                      <li class="dropdown-item"><a href="contact.html">Contact</a></li>
-                      <li class="dropdown-item"><a href="advance.html">Advance</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Cart &nbsp;<i class="fa-solid fa-cart-plus"></i></a></li>
-                </ul>
+
+                <?php 
+                    wp_nav_menu(array(
+                        'theme_location' => 'main-menu',
+                        'menu_class' => 'd-flex',
+                        'walker' => new WP_Bootstrap_Navwalker(),
+                    ));
+                ?>
+ 
               </nav>
               <div class="menu-button">
                 <a href="<?php echo $options['header-1-url']; ?>" class="btn-1"><?php echo $options['header-button-1']; ?></a>
               </div>
+            </div>
+          </div>
+       </div>
+       <div class="row benner_area">
+          <div class="col-lg-6">
+            <div class="bennar_conteat">
+              <h1><?php echo $options['bennar-heading'];?></h1>
+              <p><?php echo $options['bennar-description']; ?></p>
+              <ul class=" d-flex">
+                <li><a class=" btn-2" href="<?php echo $options['button-1-url'];?>"><?php echo $options['bennar-button-1'];?></a></li>
+                <li><a class=" btn-3 d-flex align-items-center" id="popupVideo" href="<?php echo $options['button-2-url'];?>"><?php echo $options['bennar-button-2'];?><i class="fa-solid fa-circle-play"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="bennar-img" >
+              <img src="<?php echo $options['bennar-image']['url'];?>" loading="lazy" alt="">
             </div>
           </div>
        </div>

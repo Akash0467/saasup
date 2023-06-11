@@ -3,6 +3,11 @@ function saasup_theme_setup(){
     // Theme Support
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
+
+    // Register Nav Menus
+    register_nav_menus(array(
+        'main-menu' => 'Main Menu',
+    ));
 };
 add_action('after_setup_theme','saasup_theme_setup');
 
@@ -34,6 +39,15 @@ function saasup_Widgets(){
     ));
 }
 add_action('widgets_init','saasup_Widgets');
+
+
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
 
 // CodeStar Famework
 require_once('inc/theme-options/codestar-framework.php');

@@ -1,124 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <title>Saasup</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Social-meta tag  -->
-  <meta name="description" content=" I’m Masud Rana Front-end Developer." >
-  <meta property="og:title" content="Saasup Website" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://coderit.online/Masud/saasup" />
-  <meta property="og:image" content="https://coderit.online/Masud/thambil2.png" />
-  <!-- Twitter-meta tag  -->
-  <meta name="twitter:title" content="Saasup Website">
-  <meta name="twitter:description" content=" I’m Masud Rana Front-end Developer.">
-  <meta name="twitter:image" content=" https://coderit.online/Masud/thambil2.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- favicon-icon  -->
-  <link rel="shortcut icon" href="assets/images/favicon-icon.png" type="image/x-icon">
-  <!-- CSS Links -->
-  <link href="assets/css/magnific-popup.css" rel="stylesheet">
-  <link href="assets/css/fontawesome.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
-  <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/responsive.css" rel="stylesheet">
-
-</head>
-
-<body>
-  <!-- strat header_area  -->
-  <header class="header_area section_padding">
-    <div class="container">
-       <div class="row align-items-center">
-          <div class="col-md-12 col-lg-3 ">
-            <div class="logo">
-              <a href="index.html">
-                <img src="assets/images/Logo.svg" loading="lazy" alt="saasup_logo">
-              </a>
-              <div class="menu-icon">
-                <a href="#" class="btn-2">Sing In</a>
-                <a href="#" class="menu-icon1"><i class="fa-solid fa-bars-staggered"></i></a>
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-9">
-            <div class="menus d-flex justify-content-end align-items-center">
-              <nav class="menu">
-                <ul class="d-flex ">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="#"  data-bs-toggle="dropdown" class="dropdown-toggle"  >Features</a>
-                    
-                    <ul class="dropdown-menu">
-                      <li class="dropdown-item"><a href="features.html">Features</a></li>
-                      <li class="dropdown-item"><a href="developer.html">Developer</a></li>
-                      <li class="dropdown-item"><a href="Articles.html">Article</Article></a></li>
-                      <li class="dropdown-item"><a href="facebook.html">Facebook</a></li>
-                       
-                    </ul>
-                  </li>
-                  <li><a href="#"  data-bs-toggle="dropdown"  class="dropdown-toggle" >Pages</a>
-                    
-                    <ul class="dropdown-menu">
-                      <li class="dropdown-item"><a href="careers.html">Careers</a></li>
-                      <li class="dropdown-item"><a href="changelog.html">Changelog</a></li>
-                      <li class="dropdown-item"><a href="Integrations.html">Integrations</a></li>
-                      <li class="dropdown-item"><a href="contact.html">Contact</a></li>
-                      <li class="dropdown-item"><a href="advance.html">Advance</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="Articles.html">Blog</a></li>
-                  <li><a href="#">Cart &nbsp;<i class="fa-solid fa-cart-plus"></i></a></li>
-                </ul>
-              </nav>
-              <div class="menu-button">
-                <a href="#" class="btn-1">Sing In</a>
-              </div>
-            </div>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-         -->
-          </div>
-
-       </div>
-
-       <div class="row benner_area">
-          <div class="col-lg-6">
-            <div class="bennar_conteat">
-              <h1>Build your audience and grow your brand</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit interdum ullamcorper sed pharetra sene</p>
-              <ul class=" d-flex">
-                <li><a class=" btn-2" href="#">Get Started</a></li>
-                <li><a class=" btn-3 d-flex align-items-center" id="popupVideo" href="https://www.youtube.com/watch?v=oOkGmK3_Hdg">Watch Video <i class="fa-solid fa-circle-play"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="bennar-img" >
-              <img src="assets/images/Image22.png" loading="lazy" alt="">
-            </div>
-          </div>
-       </div>
-
-      </div>
-
-    </div>
-
-  </header>
-  <!-- end header_area  -->
-  
+<?php 
+  // Template Name: Home Template
+  get_header('home');
+?> 
   <main>
     <section class="features_area section_padding">
       <div class="container">
@@ -135,7 +18,7 @@
         <div class="row justify-content-center"> 
           <div class="col-md-6 col-lg-4"  >
             <div class="features_item text-center"  >
-              <img src="assets/images/Icon.png" loading="lazy" alt="features-img">
+              <img src="<?php echo get_template_directory_uri();?>/assets/images/Icon.png" loading="lazy" alt="features-img">
               <h3>Secured Platform</h3>
               <p>Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece.</p>
               <a href="#"  class="stretched-link">Learn More</a>
@@ -144,7 +27,7 @@
           </div>
           <div class="col-md-6 col-lg-4" >
             <div class="features_item text-center"   >
-              <img src="assets/images/Icon(1).png" loading="lazy" alt="features-img">
+              <img src="<?php echo get_template_directory_uri();?>/assets/images/Icon(1).png" loading="lazy" alt="features-img">
               <h3>Advanced Analytics</h3>
               <p>Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece.</p>
               <a href="#"  class="stretched-link">Learn More</a>
@@ -153,7 +36,7 @@
           </div>
           <div class="col-md-6 col-lg-4"  >
             <div class="features_item text-center"  >
-              <img src="assets/images/Icon(2).png" loading="lazy" alt="features-img">
+              <img src="<?php echo get_template_directory_uri();?>/assets/images/Icon(2).png" loading="lazy" alt="features-img">
               <h3>Powerful Automation</h3>
               <p>Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece.</p>
               <a href="#" class="stretched-link">Learn More</a>
@@ -173,7 +56,7 @@
               <h2 data-aos="fade-down-left">Powerful and easy to use saas builder platform</h2>
               <p>It is a long established fact that a reader will be by the from readable content of a page when looking at its layout. The point of using lorem Ipsum.</p>
               <div class="cost d-flex">
-                <img src="assets/images/cost.png" loading="lazy" alt="cost-icon">
+                <img src="<?php echo get_template_directory_uri();?>/assets/images/cost.png" loading="lazy" alt="cost-icon">
                 <div class="cost-text">
                   <h3>Cost Effective</h3>
                   <p>Contrary to popular belief, Lore Ipsum is not simply random text. </p>
@@ -182,7 +65,7 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <img src="assets/images/Image(1).png" loading="lazy"    alt="platfomr-images">
+            <img src="<?php echo get_template_directory_uri();?>/assets/images/Image(1).png" loading="lazy"    alt="platfomr-images">
           </div>
         </div>
       </div>
@@ -228,14 +111,14 @@
                <div class="row">
                 <div class="col-md-6 create-text">
                   <div class="create d-flex align-items-center">
-                    <a href=""><img src="assets/images/create.svg" alt=""></a>
+                    <a href=""><img src="<?php echo get_template_directory_uri();?>/assets/images/create.svg" alt=""></a>
                     <h3 >Create your account & start your work</h3>
                   </div>
                   <p>It is a long established fact that a reader will be distracted by the readable content of a page from when looking at it layout. The point of using Lorem Ipsum</p>
                   <a href="" class="btn-1 btn-over">Get Started</a>
                 </div>
                 <div class="col-md-6">
-                  <img src="assets/images/create-acount.png"  alt="create-img">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/images/create-acount.png"  alt="create-img">
                 </div>
                </div>
             </div>
@@ -245,14 +128,14 @@
                <div class="row">
                 <div class="col-md-6 create-text">
                   <div class="create d-flex align-items-center">
-                    <a href=""><img src="assets/images/create.svg" alt="create-img"></a>
+                    <a href=""><img src="<?php echo get_template_directory_uri();?>/assets/images/create.svg" alt="create-img"></a>
                     <h3>Create your account & start your work</h3>
                   </div>
                   <p>It is a long established fact that a reader will be distracted by the readable content of a page from when looking at it layout. The point of using Lorem Ipsum</p>
                   <a href="" class="btn-1 btn-over">Install</a>
                 </div>
                 <div class="col-md-6">
-                  <img src="assets/images/icon_platform2.png" alt="images">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/images/icon_platform2.png" alt="images">
                 </div>
                </div>
             </div>
@@ -262,14 +145,14 @@
                <div class="row">
                 <div class="col-md-6 create-text">
                   <div class="create d-flex align-items-center">
-                    <a href=""><img src="assets/images/create.svg" alt="platfomr-images"></a>
+                    <a href=""><img src="<?php echo get_template_directory_uri();?>/assets/images/create.svg" alt="platfomr-images"></a>
                     <h3>Create your account & start your work</h3>
                   </div>
                   <p>It is a long established fact that a reader will be distracted by the readable content of a page from when looking at it layout. The point of using Lorem Ipsum</p>
                   <a href="" class="btn-1 btn-over">Track</a>
                 </div>
                 <div class="col-md-6">
-                  <img src="assets/images/md.png" alt="platfomr-images">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/images/md.png" alt="platfomr-images">
                 </div>
                </div>
             </div>
@@ -301,7 +184,7 @@
                     <span class="quote" >“</span>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage .</p>
                     <div class="trusted_img">
-                        <img src="assets/images/Image (70).png" loading="lazy" alt="James_Toriff">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/Image (70).png" loading="lazy" alt="James_Toriff">
                         <h3>James Toriff</h3>
                         <p>Developer</p>
                         <i class="fa-solid fa-star"></i>
@@ -318,7 +201,7 @@
                     <span class="quote" >“</span>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage .</p>
                     <div class="trusted_img">
-                        <img src="assets/images/Image (70).png" loading="lazy" alt="James_Toriff">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/Image (70).png" loading="lazy" alt="James_Toriff">
                         <h3>James Toriff</h3>
                         <p>Developer</p>
                         <i class="fa-solid fa-star"></i>
@@ -351,10 +234,10 @@
               <h3>Accepted Payment Methods </h3>
               <div class="simple_crade_img">
                 <ul class="d-flex justify-content-between"> 
-                  <li><img src="assets/images/simple_crad/simple-crad4.svg" alt="simple_crade_img"></li>
-                  <li><img src="assets/images/simple_crad/simple-crad3.svg" alt="simple_crade_img"></li>
-                  <li><img src="assets/images/simple_crad/simple-crad2.svg" alt="simple_crade_img"></li>
-                  <li><img src="assets/images/simple_crad/simple-crad1.svg" alt="simple_crade_img"></li>
+                  <li><img src="<?php echo get_template_directory_uri();?>/assets/images/simple_crad/simple-crad4.svg" alt="simple_crade_img"></li>
+                  <li><img src="<?php echo get_template_directory_uri();?>/assets/images/simple_crad/simple-crad3.svg" alt="simple_crade_img"></li>
+                  <li><img src="<?php echo get_template_directory_uri();?>/assets/images/simple_crad/simple-crad2.svg" alt="simple_crade_img"></li>
+                  <li><img src="<?php echo get_template_directory_uri();?>/assets/images/simple_crad/simple-crad1.svg" alt="simple_crade_img"></li>
                 </ul>
               </div>
             </div>
@@ -434,7 +317,7 @@
 
           </div>
           <div class="col-lg-6" >
-            <img src="assets/images/trial-img/trial-img.png" loading="lazy" alt="trial-img">
+            <img src="<?php echo get_template_directory_uri();?>/assets/images/trial-img/trial-img.png" loading="lazy" alt="trial-img">
           </div>
           
         </div>
@@ -459,7 +342,7 @@
           <div class="col-lg-6">
             <div class="blog_boxs">
               <div class="blog_box" >
-                <img src="assets/images/blog_img/blog_img1.png" alt="blog-img">
+                <img src="<?php echo get_template_directory_uri();?>/assets/images/blog_img/blog_img1.png" alt="blog-img">
                 <div class="blog-button">
                   <a href="#" class="btn-1">Marketing</a>
                   <a href="#" class="btn-1">Analysis</a>
@@ -479,7 +362,7 @@
           <div class="col-lg-6">
             <div class="blog_boxs">
               <div class="blog_box" >
-                <img src="assets/images/blog_img/blog_img2.png" alt="blog-img">
+                <img src="<?php echo get_template_directory_uri();?>/assets/images/blog_img/blog_img2.png" alt="blog-img">
                 <div class="blog-button">
                   <a href="#" class="btn-1">Marketing</a>
                   <a href="#" class="btn-1">Analysis</a>
@@ -499,105 +382,5 @@
       </div>
      </section>
      <!-- Blog_area section end -->
-     
-
   </main>
-
-  <footer>
-    <!-- place footer here -->
-    <section class="footer_area">
-      <div class="container">
-        <div class="row footer-padding" >
-          <div class="col-xl-4 col-lg-6 order-lg-1 order-xl-1 "> 
-             <div class="footer_text-1">
-              <img src="assets/images/Logo.svg" alt="footer-logo">
-              <p>It is a long established fact that from will be distracted by the readable from when looking.</p>
-              <div class="footer_email01 d-flex">
-                <a href="#"><i class="fa-regular fa-envelope"></i></a>
-                <ul class="footer_email">
-                  <li><a href="mailto:saasup@gmail.com"   >saasup@gmail.com</a></li>
-                  <li><a href="mailto:mail@saasup.com"  >mail@saasup.com</a></li>
-                </ul>
-              </div>
-              <div class="footer-phone01 d-flex">
-                <a href="#"> <i class="fa-solid fa-phone-volume"></i></a>
-                <ul class="footer_phone">
-                  <li><a href="tel:+987 6541 3654" >+987 6541 3654</a></li>
-                  <li><a href="tel:+001 6547 6589">+001 6547 6589</a></li>
-                </ul>
-              </div>
-              
-             </div>
-          </div>
-          <div class="col-xl-2 col-lg-6 order-lg-3 order-xl-2 ">
-            <div class="pages">
-              <h3>Pages</h3>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us </a></li>
-                <li><a href="Integrations.html">Integrations</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-6 order-lg-4 order-xl-3 ">
-            <div class="pages">
-              <h3>Utility Pages</h3>
-              <ul>
-                <li><a href="password.html">Password</a></li>
-                <li><a href="advance.html">Protected</a></li>
-                <li><a href="found.html">404 Not Found</a></li>
-                <li><a href="facebook.html">Style Guide</a></li>
-                <li><a href="Licenses.html">Licenses</a></li>
-                <li><a href="changelog.html">Changelog</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 order-lg-2 order-xl-4 ">
-            <div class="downlod_area">
-              <a href="#" class="link-tag" >Downlod</a>
-              <h3>Its suitable to all decvices and screens</h3>
-              <p>It is a long established fact that a reader will be distracted layout.</p>
-              <ul class="d-flex align-items-center downlod-button">
-                <li><a href="#" class="btn-2"> <i class="fa-brands fa-apple"></i>App Store</a></li>
-                <li><a href="#" class="btn-2"><i class="fa-brands fa-android"></i>Play Store</a></li>
-              </ul>
-            </div>
-          </div>
-          
-        </div>
-        <div class="row" >
-          <div class="col-12">
-            <div class="copyright d-flex justify-content-between">
-              <p>Copyright © Saasup | Designed by Victorflow - Powered by Webflow</p>
-              <div class="footer-icon">
-                <ul class="d-flex">
-                  <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                  <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                  <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-                  <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-                 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </footer>
-
-  <!-- JavaScript Libraries -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="assets/js/jquery.counterup.min.js"></script>
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-   
-
-  <script src="assets/js/scripts.js"></script> 
-</body>
-</html>
+<?php get_footer(); ?>

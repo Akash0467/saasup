@@ -1,9 +1,7 @@
-<?php 
-  $options = get_option('saasup');
-?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+
   <!-- Required meta tags -->
   <meta charset="<?php echo bloginfo('charset');?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -38,8 +36,9 @@
               <img src="<?php echo $options['header-logo']['url'];?>" loading="lazy" alt="saasup_logo">
               </a>
               <div class="menu-icon">
-                <a href="#" class="btn-2">Sing In</a>
+                <a href="<?php echo $options['header-1-url']; ?>" class="btn-1"><?php echo $options['header-button-1']; ?></a>
                 <a href="#" class="menu-icon1"><i class="fa-solid fa-bars-staggered"></i></a>
+                
               </div>
             </div>
           </div>
@@ -50,11 +49,13 @@
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="#"  data-bs-toggle="dropdown" class="dropdown-toggle"  >Features</a>
+                    
                     <ul class="dropdown-menu">
                       <li class="dropdown-item"><a href="features.html">Features</a></li>
                       <li class="dropdown-item"><a href="developer.html">Developer</a></li>
                       <li class="dropdown-item"><a href="Articles.html">Article</Article></a></li>
                       <li class="dropdown-item"><a href="facebook.html">Facebook</a></li> 
+                       
                     </ul>
                   </li>
                   <li><a href="#"  data-bs-toggle="dropdown"  class="dropdown-toggle" >Pages</a>
@@ -72,13 +73,23 @@
                 </ul>
               </nav>
               <div class="menu-button">
-                <a href="<?php echo $options['header-1-url']; ?>" class="btn-1"><?php echo $options['header-button-1']; ?></a>
+              <a href="<?php echo $options['header-1-url']; ?>" class="btn-1"><?php echo $options['header-button-1']; ?></a>
               </div>
             </div>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+         -->
           </div>
+
        </div>
+
+        
+
       </div>
+
     </div>
+
   </header>
   <!-- end header_area  -->
   
